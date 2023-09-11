@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'pages/home'
   namespace :api do
     namespace :v1 do
       resources :steps

@@ -8,6 +8,7 @@ namespace :api do
       # resources :users
     end
   end
+end
 
 scope :api do
     scope :v1 do

@@ -8,7 +8,7 @@
 if Doorkeeper::Application.count.zero?
     # Doorkeeper::Application.create!(name: "Web Client", redirect_uri: "http://localhost:3000/", scopes: "public")
     Doorkeeper::Application.create!(name: "Web Client", redirect_uri: "", scopes: "")
-    Doorkeeper::Application.create!(name: "React", redirect_uri: "", scopes: "")
+    Doorkeeper::Application.create!(name: "React Client", redirect_uri: "", scopes: "")
 end
 User.first_or_create(email: 'cabe@xample.com', 
                     password: 'password', 

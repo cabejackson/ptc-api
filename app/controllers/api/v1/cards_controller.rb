@@ -5,8 +5,7 @@ class Api::V1::CardsController < ApplicationController
   # GET /cards
   def index
     @cards = Card.all
-
-    # render json: @cards
+    render json: @cards
   end
 
   # GET /cards/1
@@ -14,9 +13,9 @@ class Api::V1::CardsController < ApplicationController
     render json: @card
   end
 
-  # GET /cardss/new
+  # GET /cards/new
   def new
-    @card = Card.new
+    render json: @card = Card.new
   end
 
   # POST /cards

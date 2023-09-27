@@ -7,5 +7,9 @@ class PagesController < ApplicationController
       client_id: @application.uid,
       client_secret: @application.secret
     }
+
+    puts "Client IDDDDDDDDDDDDD: #{@application[:client_id]}" 
+    puts "Client shhhhhh: #{@application[:client_secret]}" 
+    puts "Name: #{@application[:name]}" 
   end
 end
